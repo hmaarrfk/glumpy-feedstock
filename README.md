@@ -17,9 +17,9 @@ and modern OpenGL.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/glumpy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/glumpy-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/glumpy-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/glumpy-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/glumpy-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/glumpy-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/ramonaoptics/glumpy-feedstock/master.svg?label=Linux)](https://circleci.com/gh/ramonaoptics/glumpy-feedstock)
+[![OSX](https://img.shields.io/travis/ramonaoptics/glumpy-feedstock/master.svg?label=macOS)](https://travis-ci.org/ramonaoptics/glumpy-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/ramonaoptics/glumpy-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/ramonaoptics/glumpy-feedstock/branch/master)
 
 Current release info
 ====================
@@ -62,7 +62,7 @@ opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `ramonaoptics` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `ramonaoptics` channel.
-Note that all branches in the conda-forge/glumpy-feedstock are
+Note that all branches in the ramonaoptics/glumpy-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
