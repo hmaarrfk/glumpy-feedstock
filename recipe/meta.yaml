@@ -25,6 +25,7 @@ requirements:
   run:
     - python
     - numpy
+    - triangle
 
 test:
   imports:
