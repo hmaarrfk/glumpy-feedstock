@@ -1,1 +1,12 @@
-[]
+# Needed for readme generation
+channels:
+  targets:
+  - [ramonaoptics, main]
+
+# Needed for ci_support
+channel_sources:
+- ramonaoptics,conda-forge,defaults
+
+# Needed for ci_support
+channel_targets:
+- ramonaoptics main

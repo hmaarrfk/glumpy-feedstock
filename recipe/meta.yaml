@@ -1,5 +1,5 @@
 {% set name = "glumpy" %}
-{% set version = "3.8.2" %}
+{% set version = "1.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -20,12 +20,13 @@ requirements:
     - python
     - pip
     - cython
-    - numpy
+    - numpy =1.11
     - triangle
   run:
     - python
-    - numpy
     - triangle
+    - pyopengl
+    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
