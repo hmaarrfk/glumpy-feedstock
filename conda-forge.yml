@@ -10,3 +10,8 @@ channel_sources:
 # Needed for ci_support
 channel_targets:
 - ramonaoptics main
+
+# Needed for something else
+github:
+  user_or_org: 'ramonaoptics'
+  branch_name: 'master'
