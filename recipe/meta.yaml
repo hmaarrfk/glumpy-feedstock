@@ -1,0 +1,48 @@
+{% set name = "glumpy" %}
+{% set version = "3.8.2" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 210ae1da1d6ba29a242960a4415e6c101a0985aafe07d4bb77f1611ee372d548
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+  host:
+    - python
+    - pip
+    - cython
+    - numpy
+    - triangle
+  run:
+    - python
+    - numpy
+
+test:
+  imports:
+    - glumpy
+
+about:
+  home: http://glumpy.github.io/
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE.txt
+  summary: 'Glumpy is a python library for scientific visualization that is both fast, scalable and beautiful.'
+
+  # The remaining entries in this section are optional, but recommended
+  description: |
+    Glumpy is a python library for scientific visualization that is both fast,
+    scalable and beautiful. Glumpy offers an intuitive interface between numpy
+    and modern OpenGL.
+
+extra:
+  recipe-maintainers:
+    - hmaarrfk
