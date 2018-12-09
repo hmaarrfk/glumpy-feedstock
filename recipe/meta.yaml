@@ -17,17 +17,17 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - python
+    - python >=3
     - pip
     - cython
     - numpy =1.11
   run:
-    - python
+    - python >=3
     - {{ pin_compatible('numpy') }}
     - triangle
     - freetype
     - glfw      # [not osx]
-    - pyopengl  # [not win]
+    - pyopengl
 
 test:
   imports:
