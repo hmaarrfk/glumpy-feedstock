@@ -10,8 +10,9 @@ source:
   sha256: 210ae1da1d6ba29a242960a4415e6c101a0985aafe07d4bb77f1611ee372d548
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  skip: True  # [win and vc<14]
 
 requirements:
   build:
@@ -21,13 +22,13 @@ requirements:
     - pip
     - cython
     - numpy =1.11
-    - triangle
   run:
     - python
-    - triangle
-    - pyopengl
-    - freetype
     - {{ pin_compatible('numpy') }}
+    - triangle
+    - freetype
+    - glfw      # [not osx]
+    - pyopengl
 
 test:
   imports:
