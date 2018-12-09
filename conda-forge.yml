@@ -1,9 +1,10 @@
-# Needed for readme generation
 channels:
+  # Needed for appveyor
   sources:
     - ramonaoptics
     - conda-forge
     - defaults
+  # Needed for readme generation
   targets:
   - [ramonaoptics, main]
 
