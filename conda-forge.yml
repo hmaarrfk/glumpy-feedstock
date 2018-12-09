@@ -1,5 +1,9 @@
 # Needed for readme generation
 channels:
+  sources:
+    - ramonaoptics
+    - conda-forge
+    - defaults
   targets:
   - [ramonaoptics, main]
 
