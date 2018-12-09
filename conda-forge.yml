@@ -13,5 +13,11 @@ channel_targets:
 
 # Needed for something else
 github:
-  user_or_org: 'ramonaoptics'
-  branch_name: 'master'
+  user_or_org: ramonaoptics
+  branch_name: master
+travis:
+  secure:
+    BINSTAR_TOKEN: odYAzteRgbM/cyhqLI07/lgl6oyleYD5Ljs7FCphPGPEOMVwWT+4oapnW+ouvB92KSmXOjcQPqCbZ4C8Xi9ENV3mLlWs5XGKK4ScdWN+v3HCHSpzs/9iYh0Be3AtlTyiumTts+TZF6TuqrGPBEAvHNbeVusmcENIRxWiL//tfffJJ7Z2LZ4vBO1HNTbGx5RziNh2k+KLB8DXz+/Frm3iR4uimnS3iieCRgVEEP6sP9npfz4aUHkI7wzbL9yXo4MQGZLsFVvg9svxdyUtoBdNWBDYnGyz4gVTudoIxXW9eyc5xaJ+Mttun3Kr/ythcyIdANlegrNGY4Nq358d0JzFafFLRBPkPUE37CfPBjDMUD/+bcF7ZAZhOMTPNE9BsDQP3JlLs/Da8Ckkdh3UfPtRIkssg+QeC0TXPz8o43NEz1XYMxOn/xg6nMYwNx/lAkZRnJ/iAScW13M8OikfgjMigseVftSZVK4RZmQg+gEs/VpDrsTgUaMJzWKnb/sjzZ7QzTPj4vzlaN0USkSEAvZHomTEGyF6iVYu/ohjbfFUNDdIgnaV1pvzeXzIP1cTnO9Efc6RsXw+urLMSzdB+n921ooXuYGi2EUpvFubdJWsb7wLEXXgS8f8n8RFlOM+P45KiptI7HEu2MnTE7ZeRhcRLZYBQLTG1CEkbatgDZzPRmI=
+appveyor:
+  secure:
+    BINSTAR_TOKEN: a8JN3c8s+67YV0kXG3aTQroHnYbyyZ9QNDK2cc/xJTFHzBnpTnu1jdOdFTb/Epek
