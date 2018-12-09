@@ -26,6 +26,7 @@ requirements:
     - python
     - triangle
     - pyopengl
+    - freetype
     - {{ pin_compatible('numpy') }}
 
 test:
